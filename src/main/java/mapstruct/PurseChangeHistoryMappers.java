@@ -1,5 +1,6 @@
 package mapstruct;
 
+import domain.dos.Purse;
 import domain.dos.PurseChangeHistory;
 import domain.vos.PurseChangeHistoryVo;
 import org.mapstruct.Mapper;
@@ -16,4 +17,6 @@ public interface PurseChangeHistoryMappers {
 	PurseChangeHistoryMappers PURSE_CHANGE_HISTORY_MAPPER = Mappers.getMapper(PurseChangeHistoryMappers.class);
 
 	PurseChangeHistoryVo PurseChangeHistoryToPurseChangeHistoryVo(PurseChangeHistory purseChangeHistory);
+
+	PurseChangeHistory PurseChangeHistoryVoToPurseChangeHistory(PurseChangeHistoryVo purseChangeHistoryVo);
 }

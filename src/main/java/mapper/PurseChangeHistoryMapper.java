@@ -11,4 +11,6 @@ import domain.queries.PurseChangeHistoryQuery;
  */
 public interface PurseChangeHistoryMapper {
 	Page<PurseChangeHistory> selectUserPurseChangeHistoryPage(PurseChangeHistoryQuery<PurseChangeHistory> page, Long userId);
+
+	void insertPurseChangeHistory(PurseChangeHistory purseChangeHistoryVoToPurseChangeHistory);
 }

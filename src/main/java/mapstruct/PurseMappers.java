@@ -1,6 +1,7 @@
 package mapstruct;
 
 import domain.dos.Purse;
+import domain.vos.PurseChangeHistoryVo;
 import domain.vos.PurseVo;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

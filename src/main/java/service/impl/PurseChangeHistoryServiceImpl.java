@@ -41,4 +41,9 @@ public class PurseChangeHistoryServiceImpl implements PurseChangeHistoryService 
 		}
 		return null;
 	}
+
+	@Override
+	public void insertPurseChangeHistory(PurseChangeHistoryVo purseChangeHistoryVo) {
+		purseChangeHistoryMapper.insertPurseChangeHistory(PurseChangeHistoryMappers.PURSE_CHANGE_HISTORY_MAPPER.PurseChangeHistoryVoToPurseChangeHistory(purseChangeHistoryVo));
+	}
 }
